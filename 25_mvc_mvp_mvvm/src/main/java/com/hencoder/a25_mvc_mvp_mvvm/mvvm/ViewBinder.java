@@ -31,6 +31,7 @@ public class ViewBinder {
                     editText.setText(newText);
                 }
                 System.out.println("被动改变: " + newText);
+
             }
         });
     }

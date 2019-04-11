@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import com.hencoder.a25_mvc_mvp_mvvm.R;
 
 import androidx.annotation.Nullable;
+import com.hencoder.a25_mvc_mvp_mvvm.data.DataCenter;
 
 public class DataView extends LinearLayout implements MvcActivity.IView {
     EditText data1View;
@@ -26,8 +27,9 @@ public class DataView extends LinearLayout implements MvcActivity.IView {
     }
 
     @Override
-    public void showData(String data1, String data2) {
-        data1View.setText(data1);
-        data2View.setText(data2);
+    public void showViewWithData() {
+        String[] data = DataCenter.getData();
+        data1View.setText(data[0]);
+        data2View.setText(data[1]);
     }
 }

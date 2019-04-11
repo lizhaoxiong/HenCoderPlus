@@ -25,6 +25,7 @@ public class MvpActivity extends AppCompatActivity implements Presenter.IView {
 
     @Override
     public void showData(String data1, String data2) {
+        //各种根据数据进行展示
         data1View.setText(data1);
         data2View.setText(data2);
     }

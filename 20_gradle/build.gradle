@@ -26,3 +26,8 @@ task clean(type: Delete) {
     delete rootProject.buildDir
     println "after!!!"
 }
+
+
+task print {
+    println 'rootProject.buildDir == ' + rootProject.buildDir
+}

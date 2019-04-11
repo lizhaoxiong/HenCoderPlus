@@ -17,12 +17,10 @@ public class MvcActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mvc);
 
         dataView = findViewById(R.id.dataView);
-
-        String[] data = DataCenter.getData();
-        dataView.showData(data[0], data[1]);
+        dataView.showViewWithData();
     }
 
     interface IView {
-        void showData(String data1, String data2);
+        void showViewWithData();
     }
 }

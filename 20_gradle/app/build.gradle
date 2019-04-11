@@ -41,7 +41,22 @@ task bumpVersion() {
 }
 
 task commitWithVersion(dependsOn: bumpVersion) {
+    group = "sb"
     doLast {
         println "Bumped!!!"
+    }
+}
+
+task commitWithVersion2(dependsOn: commitWithVersion){
+    group = "sb"
+    doLast {
+        println "Bumped!!!2"
+    }
+}
+
+task commitWithVersion3(dependsOn:commitWithVersion){
+    group = "sb"
+    doLast{
+        println "Bumped!!!3"
     }
 }

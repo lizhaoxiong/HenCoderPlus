@@ -1,8 +1,6 @@
-repositories {
-    google()
-    jcenter()
-}
+apply plugin: 'groovy'
 
 dependencies {
-    implementation 'com.android.tools.build:gradle:3.2.1'
+    compile gradleApi()
+    compile localGroovy()
 }
